@@ -8,7 +8,7 @@ echo "Defaults visiblepw"  >> /etc/sudoers.d/50_vagrant
 
 # make sure we're on the right runlevel
 
-sed -i -e 's/id:5:initdefault:/id:5:initdefault:/' /etc/inittab
+sed -i -e 's/id:5:initdefault:/id:3:initdefault:/' /etc/inittab
 telinit 3
 
 # install required standard software
