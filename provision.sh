@@ -34,7 +34,8 @@ cat > /home/benchfarm/installbench.sh <<-EOF
 	tar -z --strip-components=1 -xvf latest-client.tgz
 	mkdir buildroot 
 	sed -i -e 's!\(build_root =>\).*!\1 "/home/benchfarm/buildroot",!' \
-	       -e 's!\(CCACHE_DIR.*\)!# \1!' -e 's!--enable-cassert!!' \
+	       -e 's!\(CCACHE_DIR.*\)!# \1!' \
+	       -e 's!--enable-cassert!!' \
 	       -e 's!\(modules =>\).*!\1 [ qw(Pgbench) ],!' \
 	    build-farm.conf
 	sed -i -e '/Pgbench/ r pgbench.conf' build-farm.conf
