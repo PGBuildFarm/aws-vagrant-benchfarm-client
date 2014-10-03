@@ -51,6 +51,4 @@ cat > /home/benchfarm/runbench.sh <<-EOF
 chown benchfarm:benchfarm /home/benchfarm/installbench.sh /home/benchfarm/runbench.sh
 chmod +x /home/benchfarm/installbench.sh /home/benchfarm/runbench.sh
 su - benchfarm -c ./installbench.sh
-
-
-
+rm -f /home/benchfarm/pgbench.conf
