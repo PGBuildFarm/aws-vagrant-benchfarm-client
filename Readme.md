@@ -1,4 +1,4 @@
-# Recipe for and AWS instance running PostgreSQL Benchfarm Client
+# Recipe for an AWS instance running PostgreSQL Benchfarm Client
 
 This vagrant recipe uses the vagrant-aws provider to set up an AWS instance of
 Scientific Linux with all the software required to run the a PGBenchfarm
